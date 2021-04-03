@@ -29,7 +29,7 @@ export class BarChartComponent implements OnInit {
 
   private chartInit() {
     const chartContainer = d3
-    .select('svg')
+    .select('#barChart')
     .attr('width', this.CHART_WIDTH)
     .attr('height', this.CHART_HEIGHT + this.MARGINS.top + this.MARGINS.bottom);
   
