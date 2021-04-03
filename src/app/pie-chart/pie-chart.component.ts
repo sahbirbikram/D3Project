@@ -43,6 +43,7 @@ export class PieChartComponent implements OnInit {
     // Creating arc
     const arc = d3.arc().outerRadius(radius).innerRadius(0);
 
+    // For Labels
     const label = d3.arc().outerRadius(radius).innerRadius(radius - 150);
 
     //Grouping different pies
@@ -58,6 +59,7 @@ export class PieChartComponent implements OnInit {
     .attr('d', <any>arc)
     .attr('fill', d => color(d.data.value));
 
+    // Adding label
     pies.append('text')
     .attr('transform', (d) => `translate(${label.centroid(<any>d)})`)
     .text(d => d.data.name)
