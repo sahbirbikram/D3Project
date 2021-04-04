@@ -21,6 +21,7 @@
     "@angular/router": "~10.0.6",
     "d3": "^6.6.2",
     "rxjs": "~6.5.5",
+    "topojson-client": "^3.1.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },
